@@ -12,6 +12,11 @@
      */
     function sum(numbers) {
         var total = 0;
+
+        if (!numbers) {
+            return total;
+        }
+
         numbers.forEach(function addThem(num) {
             total += num;
         });
@@ -28,6 +33,11 @@
     function factorial(topNumber) {
         var i;
         var total = 0;
+
+        if (typeof(topNumber) !== 'number') {
+            return 0;
+        }
+
         for (i=1; i<=topNumber; i++) {
             total *= i;
         }
