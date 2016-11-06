@@ -1,2 +1,3 @@
-# fee-testing
-A repo to practice testing JavaScript
+# Front End Testing
+
+This repo is a practice area for testing front end JavaScript code.
