@@ -1,0 +1,26 @@
+{
+  "name": "fee-testing",
+  "version": "1.0.0",
+  "description": "This repo is a practice area for testing front end JavaScript code.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TIYDC/fee-testing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TIYDC/fee-testing/issues"
+  },
+  "homepage": "https://github.com/TIYDC/fee-testing#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2"
+  }
+}

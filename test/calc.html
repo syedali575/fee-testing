@@ -3,10 +3,33 @@
     <head>
         <meta charset="utf-8">
         <title>Calc Tests</title>
+
+<link rel="stylesheet" href="../node_modules/mocha/mocha.css" type="text/css">
+
     </head>
     <body>
 
+      <main id="mocha"></main>
 
+
+
+<!-- any libraries we need --->
+<script src="../node_modules/mocha/mocha.js"> </script>
+<script src="../node_modules/chai/chai.js"> </script>
+<!-- Source JS code -->
+<script src="../src/js/calc.js"></script>
+
+<script>
+mocha.setup("bdd");
+</script>
+
+<!-- Our Test -->
+<script src="specs/calc.spec.js"></script>
+
+<!-- Run Mocha -->
+<script>
+  mocha.run();
+</script>
 
     </body>
 </html>
