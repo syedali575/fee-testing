@@ -44,11 +44,20 @@ window.calc = window.calc || {};
 
   describe("testing factorial function", function(){
 
+
       it("Should return 120 if the argument is 5", function(){
         var resultTwo = window.calc.factorial(5);
         expect(resultTwo).to.equal(120);
+      });
 
+      it("Should handel any string as an argument", function(){
+        var resultTwo = window.calc.factorial("Apples");
+        expect(resultTwo).to.equal(0);
+      });
 
+      it("Should handel no argument", function(){
+        var result = window.calc.factorial();
+        expect(result).to.equal(0);
       });
 
   });
