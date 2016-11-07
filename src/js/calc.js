@@ -14,12 +14,16 @@
         var total = 0;
 
         if (!numbers) {
-            return total;
+            return "string";
+        }
+        else {
+
         }
 
         numbers.forEach(function addThem(num) {
             total += num;
         });
+        return total;
     }
 
     /**

@@ -13,10 +13,10 @@ window.calc = window.calc || {};
           expect(1).to.equal(1);
       });
 
-      // Good Argument
-      it("should know that sum is function", function(){
-        expect(window.calc.sum).to.be.a("function");
-      });
+      // // Good Argument
+      // it("should know that sum is function", function(){
+      //   expect(window.calc.sum).to.be.a("function");
+      // });
 
       // Good Argument
       it("Should add numbers in array and provide me sum of all numbers in array", function(){
@@ -24,10 +24,10 @@ window.calc = window.calc || {};
         expect(result).to.equal(9);
       });
 
-      //No Argument
-      it("Should give message to enter array as an argument", function(){
+
+      it("Should return string", function(){
         var result = window.calc.sum("string");
-        expect(result).to.equal([]);
+        expect(result).to.equal("string");
       });
   });
 
@@ -42,16 +42,8 @@ window.calc = window.calc || {};
 
       });
 
-
-
-
-
-
-
-
-
-
-
-
   });
+
+
+///End of iife
 })();
