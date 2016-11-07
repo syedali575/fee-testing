@@ -14,10 +14,10 @@
         var total = 0;
 
         if (!numbers) {
-            return "string";
+            return total;
         }
-        else {
-
+        else if (typeof(numbers) === "string"){
+          return numbers;
         }
 
         numbers.forEach(function addThem(num) {

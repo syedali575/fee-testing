@@ -9,26 +9,32 @@ window.calc = window.calc || {};
 
   describe("testing sum function", function() {
       // this is assertion
-      it("should know that one equals one", function(){
-          expect(1).to.equal(1);
-      });
+      // it("should know that one equals one", function(){
+      //     expect(1).to.equal(1);
+      // });
 
       // // Good Argument
       // it("should know that sum is function", function(){
       //   expect(window.calc.sum).to.be.a("function");
       // });
 
-      // Good Argument
+
       it("Should add numbers in array and provide me sum of all numbers in array", function(){
         var result = window.calc.sum([2,4,3]);
         expect(result).to.equal(9);
       });
 
-
       it("Should return string", function(){
         var result = window.calc.sum("string");
         expect(result).to.equal("string");
       });
+
+      it("Should return zero if no arguments are given", function(){
+        var result = window.calc.sum();
+        expect(result).to.equal(0);
+      });
+
+
   });
 
 
