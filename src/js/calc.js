@@ -4,6 +4,7 @@
     window.calc = window.calc || {};
 
     window.calc.sum = sum;
+    window.calc.factorial = factorial;
 
     /**
      * Adds whatever numbers are provided and returns the total
@@ -36,7 +37,7 @@
      */
     function factorial(topNumber) {
         var i;
-        var total = 0;
+        var total = 1;
 
         if (typeof(topNumber) !== 'number') {
             return 0;

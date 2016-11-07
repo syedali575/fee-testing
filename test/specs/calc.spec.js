@@ -24,10 +24,12 @@ window.calc = window.calc || {};
         expect(result).to.equal(9);
       });
 
+
       it("Should return string", function(){
         var result = window.calc.sum("string");
         expect(result).to.equal("string");
       });
+
 
       it("Should return zero if no arguments are given", function(){
         var result = window.calc.sum();
@@ -42,8 +44,9 @@ window.calc = window.calc || {};
 
   describe("testing factorial function", function(){
 
-      it("Should provide factorial of a number", function(){
-
+      it("Should return 120 if the argument is 5", function(){
+        var resultTwo = window.calc.factorial(5);
+        expect(resultTwo).to.equal(120);
 
 
       });
