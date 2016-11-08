@@ -9,6 +9,7 @@
     </head>
     <body>
 
+<!-- To see result in browser --->
       <main id="mocha"></main>
 
 
@@ -16,14 +17,17 @@
 <!-- any libraries we need --->
 <script src="../node_modules/mocha/mocha.js"> </script>
 <script src="../node_modules/chai/chai.js"> </script>
-<!-- Source JS code -->
+
+<!-- Source JS code (What we are testing)-->
 <script src="../src/js/calc.js"></script>
 
+
+<!--- Mocha setup -->
 <script>
 mocha.setup("bdd");
 </script>
 
-<!-- Our Test -->
+<!-- Our Test (Where we see our test result) -->
 <script src="specs/calc.spec.js"></script>
 
 <!-- Run Mocha -->

@@ -7,6 +7,10 @@ window.calc = window.calc || {};
 
     var expect = chai.expect;
 
+
+describe("Testing Calculator", function () {
+
+
   describe("testing sum function", function() {
 
 
@@ -52,5 +56,6 @@ window.calc = window.calc || {};
   });
 
 
+});
 ///End of iife
 })();
