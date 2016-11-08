@@ -8,35 +8,24 @@ window.calc = window.calc || {};
     var expect = chai.expect;
 
   describe("testing sum function", function() {
-      // this is assertion
-      // it("should know that one equals one", function(){
-      //     expect(1).to.equal(1);
-      // });
-
-      // // Good Argument
-      // it("should know that sum is function", function(){
-      //   expect(window.calc.sum).to.be.a("function");
-      // });
 
 
-      it("Should add numbers in array and provide me sum of all numbers in array", function(){
+      it("Should add numbers in array and provide sum of all numbers in array", function(){
         var result = window.calc.sum([2,4,3]);
         expect(result).to.equal(9);
       });
 
 
-      it("Should return string", function(){
+      it("Should return string, if string is provided as an argument", function(){
         var result = window.calc.sum("string");
         expect(result).to.equal("string");
       });
 
 
-      it("Should return zero if no arguments are given", function(){
+      it("Should handel no arguments", function(){
         var result = window.calc.sum();
         expect(result).to.equal(0);
       });
-
-
   });
 
 
@@ -46,13 +35,13 @@ window.calc = window.calc || {};
 
 
       it("Should return 120 if the argument is 5", function(){
-        var resultTwo = window.calc.factorial(5);
-        expect(resultTwo).to.equal(120);
+        var result = window.calc.factorial(5);
+        expect(result).to.equal(120);
       });
 
       it("Should handel any string as an argument", function(){
-        var resultTwo = window.calc.factorial("Apples");
-        expect(resultTwo).to.equal(0);
+        var result = window.calc.factorial("Apples");
+        expect(result).to.equal(0);
       });
 
       it("Should handel no argument", function(){
