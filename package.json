@@ -21,6 +21,7 @@
   "homepage": "https://github.com/TIYDC/fee-testing#readme",
   "devDependencies": {
     "chai": "^3.5.0",
+    "grunt": "^1.0.1",
     "mocha": "^3.1.2"
   }
 }
