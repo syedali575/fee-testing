@@ -59,7 +59,7 @@ module.exports = function(grunt){
     connect:{
       testing:{
         options:{
-          port:8888,
+          port:8080,
           base:'.'
         }
       }
@@ -69,7 +69,7 @@ module.exports = function(grunt){
       all:{
         options:{
           urls:[
-            'http://localhost:8888/test/calc.html'
+            'http://localhost:8080/test/calc.html'
           ]
         }
       }
@@ -89,9 +89,9 @@ module.exports = function(grunt){
 
 
 
-  grunt.registerTask('test', ['clean','mocha','jshint']);
+  grunt.registerTask('test', ['clean', 'connect','mocha','jshint']);
 
-  grunt.registerTask('default', ['clean','jshint','sass','copy', 'concat','connect']);
+  grunt.registerTask('default', ['clean','jshint','sass','copy', 'concat']);
 
 
 };
