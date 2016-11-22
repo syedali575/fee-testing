@@ -30,12 +30,11 @@ module.exports = function(grunt){
         files:[
         {
           expand: true,
-          cwd: 'src',
-          src:['calc.html'],
+          cwd: 'src/',
+          src:[''],
           dest: 'build/'
         }
         ]
-      }
     },
 
     vendorjs:{
@@ -47,7 +46,8 @@ module.exports = function(grunt){
           dest:'build/js'
         }
       ]
-    },
+    }
+  },
 
     concat:{
       js:{
