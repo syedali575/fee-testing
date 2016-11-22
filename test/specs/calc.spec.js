@@ -14,7 +14,7 @@
     describe("testing sum function", function() {
       it("Should add numbers in array and provide sum of all numbers in array", function(){
         var result = window.calc.sum([2,4,3]);
-        expect(result).to.equal(50);
+        expect(result).to.equal(9);
         // expect(result).to.not.equal(10);
       });
 
