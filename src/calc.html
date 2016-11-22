@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Calc Tests</title>
+
+<link rel="stylesheet" href="../node_modules/mocha/mocha.css" type="text/css">
+
+    </head>
+    <body>
+
+<!-- To see result in browser --->
+      <main id="mocha"></main>
+
+
+
+<!-- any libraries we need --->
+<script src="../node_modules/mocha/mocha.js"> </script>
+<script src="../node_modules/chai/chai.js"> </script>
+
+<!-- Source JS code (What we are testing)-->
+<script src="../src/js/calc.js"></script>
+
+
+<!--- Mocha setup -->
+<script>
+mocha.setup("bdd");
+</script>
+
+<!-- Our Test (Where we see our test result) -->
+<script src="specs/calc.spec.js"></script>
+<!-- Run Mocha -->
+<script>
+  mocha.run();
+</script>
+
+    </body>
+</html>
