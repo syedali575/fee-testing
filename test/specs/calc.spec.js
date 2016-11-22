@@ -1,22 +1,23 @@
 (function() {
-    'use strict';
+  'use strict';
 
-window.calc = window.calc || {};
+  window.calc = window.calc || {};
 
-    // TODO: Your tests go here!
+  // TODO: Your tests go here!
 
-    var expect = chai.expect;
-
-
-describe("Testing Calculator", function () {
+  var expect = chai.expect;
 
 
-  describe("testing sum function", function() {
+  describe("Testing Calculator", function () {
 
 
+    describe("testing sum function", function() {
       it("Should add numbers in array and provide sum of all numbers in array", function(){
         var result = window.calc.sum([2,4,3]);
-        expect(result).to.equal(50);
+
+        expect(result).to.equal(9);
+        // expect(result).to.not.equal(10);
+
       });
 
 
@@ -30,12 +31,12 @@ describe("Testing Calculator", function () {
         var result = window.calc.sum();
         expect(result).to.equal(0);
       });
-  });
+    });
 
 
 
 
-  describe("testing factorial function", function(){
+    describe("testing factorial function", function(){
 
 
       it("Should return 120 if the argument is 5", function(){
@@ -53,9 +54,9 @@ describe("Testing Calculator", function () {
         expect(result).to.equal(0);
       });
 
+    });
+
+
   });
-
-
-});
-///End of iife
+  ///End of iife
 })();
